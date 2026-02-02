@@ -1,0 +1,19 @@
+# YouTube Video Reloader
+
+Are you running into a pesky issue where youtube video's are stating "This content isn't availalble, try again later." that can be cleared by simply refreshing the page a few times? Well this is a simple script to automatically reload the video until that error goes away.
+
+## Icon
+
+![Extension Icon](icon.png)
+
+## Installation Guide
+
+1. Open **Google Chrome**.
+2. Go to `chrome://extensions/`.
+3. Enable **Developer mode** (top right).
+4. Click **Load unpacked** (top left).
+5. Select the folder containing these files.
+
+## How it Works
+
+The extension monitors the YouTube player at a high frequency (10Hz). If it detects the "This content isn't available" error, it triggers an immediate page reload. Once the video starts playing successfully, it stops checking to save resources.
