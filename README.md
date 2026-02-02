@@ -16,4 +16,4 @@ Are you running into a pesky issue where youtube video's are stating "This conte
 
 ## How it Works
 
-The extension monitors the YouTube player at a high frequency (10Hz). If it detects the "This content isn't available" error, it triggers an immediate page reload. Once the video starts playing successfully, it stops checking to save resources.
+The extension monitors the YouTube player and proactively detects if the "This content isn't available" error appears as the page content loads. If detected, it triggers an immediate page reload until the video is successfully available.
