@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Video Reloader",
+  "version": "1.0",
+  "description": "Automatically refreshes YouTube when a video fails to load.",
+  "permissions": [
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://www.youtube.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/watch*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
